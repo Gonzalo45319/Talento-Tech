@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechSound - Auriculares Premium | Gonzalo Chávez</title>
+  <meta name="description" content="Tienda de auriculares premium. Proyecto Pre-Entrega - Gonzalo Chávez">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER + NAV -->
+  <header>
+    <div class="header-content">
+      <h1 class="logo">🎧 TechSound</h1>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#resenas">Reseñas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- INICIO / HERO -->
+    <section id="inicio" class="hero">
+      <div class="hero-text">
+        <h2>Sonido que te mueve</h2>
+        <p>Auriculares premium con tecnología de cancelación de ruido activa. Diseñados para quienes exigen lo mejor.</p>
+        <a href="#productos" class="btn">Ver productos</a>
+      </div>
+      <div class="hero-media">
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600" alt="Auriculares premium TechSound">
+      </div>
+    </section>
+
+    <!-- PRODUCTOS - FLEXBOX -->
+    <section id="productos" class="productos">
+      <h2>Nuestros Productos</h2>
+      <div class="cards-container">
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=400" alt="Auricular Pro X1">
+          <h3>Pro X1</h3>
+          <p>Cancelación activa de ruido. 30h de batería.</p>
+          <span class="precio">$89.990</span>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?w=400" alt="Auricular Sport Z2">
+          <h3>Sport Z2</h3>
+          <p>Resistente al agua. Ideal para entrenar.</p>
+          <span class="precio">$54.990</span>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1524678606370-a47ad25cb82a?w=400" alt="Auricular Studio M3">
+          <h3>Studio M3</h3>
+          <p>Audio Hi-Res. Para productores y DJs.</p>
+          <span class="precio">$129.990</span>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=400" alt="Auricular Urban B4">
+          <h3>Urban B4</h3>
+          <p>Diseño compacto. Bluetooth 5.3.</p>
+          <span class="precio">$39.990</span>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?w=400" alt="Auricular Gamer G5">
+          <h3>Gamer G5</h3>
+          <p>Surround 7.1. Micrófono retráctil.</p>
+          <span class="precio">$74.990</span>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?w=400" alt="Auricular Kids K1">
+          <h3>Kids K1</h3>
+          <p>Volumen limitado. Colores divertidos.</p>
+          <span class="precio">$24.990</span>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- RESEÑAS - GRID -->
+    <section id="resenas" class="resenas">
+      <h2>Lo que dicen nuestros clientes</h2>
+      <div class="grid-resenas">
+
+        <div class="resena">
+          <p class="texto">"Los mejores auriculares que usé. La cancelación de ruido es increíble."</p>
+          <p class="autor">— Martín L. ⭐⭐⭐⭐⭐</p>
+        </div>
+
+        <div class="resena">
+          <p class="texto">"Excelente relación precio-calidad. Los uso todos los días para trabajar."</p>
+          <p class="autor">— Sofía R. ⭐⭐⭐⭐⭐</p>
+        </div>
+
+        <div class="resena">
+          <p class="texto">"El sonido es brutal. Los recomiendo 100% para producción musical."</p>
+          <p class="autor">— Diego P. ⭐⭐⭐⭐</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- VIDEO / MULTIMEDIA -->
+    <section class="video-section">
+      <h2>Mirá TechSound en acción</h2>
+      <div class="video-container">
+        <iframe width="100%" height="400" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video TechSound" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <!-- CONTACTO - MEDIA QUERIES -->
+    <section id="contacto" class="contacto">
+      <h2>Contacto</h2>
+      <p>¿Tenés alguna consulta? Escribinos.</p>
+
+      <form action="https://formspree.io/f/xpwaqkdr" method="POST" class="form-contacto">
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="tu@email.com">
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribí tu mensaje..."></textarea>
+        </div>
+
+        <button type="submit" class="btn">Enviar mensaje</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 TechSound — Proyecto de Gonzalo Chávez | Talento Tech</p>
+  </footer>
+
+</body>
+</html>
